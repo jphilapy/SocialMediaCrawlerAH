@@ -18,7 +18,6 @@ public class TwitterTrends {
 
     private Trends trends;
     private ArrayList<HashtagTrend> topTrendsVol;
-    private int woeid;
     private String name;
     private int vol;
 
@@ -30,9 +29,8 @@ public class TwitterTrends {
      */
     public TwitterTrends(Twitter twitter, int woeid) {
         try {
-            this.woeid = woeid; // this is the id for Indianapolis
 
-            this.trends = twitter.getPlaceTrends(this.woeid);
+            this.trends = twitter.getPlaceTrends(woeid);
             this.topTrendsVol = new ArrayList<HashtagTrend>();
 
             // it sorts, but now I need it to work on the limit. Doesn't seem
