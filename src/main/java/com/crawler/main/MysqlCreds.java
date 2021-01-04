@@ -11,9 +11,8 @@ import java.util.Properties;
 
 /**
  * 
- * @author Jeff Philapy
- * 
- * mysql connection code and jdbc code was written by Hung Doan, and adapted to here
+ * @author Hung Doan
+ *
  */
 public class MysqlCreds {
 	private static String mUser;
